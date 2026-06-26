@@ -1,11 +1,3 @@
-This use Netbeans IDE 17 and Tomcat 10.1.17 
+Built with NetBeans IDE 17 and Tomcat 10.1.17.
 
-E2E testing read this: [playwright-visible-mouse docs](https://www.npmjs.com/package/playwright-visible-mouse)
-
-
-
-
-
-
-
-
+For E2E testing, refer to the [playwright-visible-mouse documentation](https://www.npmjs.com/package/playwright-visible-mouse) for details.
