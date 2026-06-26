@@ -89,3 +89,41 @@ Thumbs.db
 # Java Servlet (Maven/Gradle)
 # npm/Node.js (e.g., Vite, Webpack, Tailwind, React frontend)
 # IntelliJ, Eclipse, or VS Code.
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Playwright
+playwright-report/
+test-results/
+blob-report/
+playwright/.cache/
+
+# Authentication state (contains cookies/tokens)
+playwright/.auth/
+
+# Screenshots, videos, traces
+test-results/**/*.png
+test-results/**/*.jpg
+test-results/**/*.jpeg
+test-results/**/*.webm
+test-results/**/*.zip
+test-results/**/*.trace
+
+# Environment variables
+.env
+.env.*
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+

@@ -1,0 +1,14 @@
+{
+  "name": "commissionwebapp",
+  "version": "1.0.0",
+  "description": "This use Netbeans IDE 17 and Tomcat",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "playwright-visible-mouse": "^1.0.4"
+  }
+}
