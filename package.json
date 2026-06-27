@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "playwright-visible-mouse": "^1.1.0"
+    "playwright-visible-mouse": "^1.2.0"
   }
 }
