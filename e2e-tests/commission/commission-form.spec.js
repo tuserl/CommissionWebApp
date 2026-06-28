@@ -6,7 +6,9 @@ const { test, expect } = require("playwright-visible-mouse")({
   launch: {
     mode: "split2",
     autoTile: true,
-    headless: false
+    headless: false,
+    screenWidth: 2060,
+    screenHeight: 1440
   }
 });
 
