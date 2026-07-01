@@ -1,5 +1,5 @@
 const { test, expect } = require("playwright-visible-mouse")({
-  url: "http://localhost:9999/CommissionWebApp/index.jsp",
+  url: "http://localhost:8080/CommissionWebApp/index.jsp",
   interactionMode: "HUMAN",
   notify: true,
   reuseBrowser: true,
@@ -38,23 +38,23 @@ test.describe.configure({ mode: "parallel" });
 //================================= TEST CASES =========================================
 
 test("TC01", async ({ ui }) => {
-  expect(await calculateCommission(ui, null, ItemType.STANDARD, CustomerType.REGULAR, 1000))
+  expect(await calculateCommission(ui, null, ItemType.STANDARD, CustomerType.REGULAR, 10000))
     .toBe(null);
 });
 
 test("TC02", async ({ ui }) => {
-  expect(await calculateCommission(ui, EmployeeType.SALARIED, null, CustomerType.REGULAR, 1000))
+  expect(await calculateCommission(ui, EmployeeType.SALARIED, null, CustomerType.REGULAR, 10000))
     .toBe(null);
 });
 
 test("TC03", async ({ ui }) => {
-  expect(await calculateCommission(ui, EmployeeType.SALARIED, ItemType.STANDARD, null, 1000))
+  expect(await calculateCommission(ui, EmployeeType.SALARIED, ItemType.STANDARD, null, 10000))
     .toBe(null);
 });
 
 test("TC04", async ({ ui }) => {
-  expect(await calculateCommission(ui, EmployeeType.SALARIED, ItemType.STANDARD, CustomerType.REGULAR, null))
-    .toBe(null);
+  expect(await calculateCommission(ui, EmployeeType.SALARIED, ItemType.BONUS, CustomerType.REGULAR, 10000))
+    .toBe(0);
 });
 
 test("TC05", async ({ ui }) => {
