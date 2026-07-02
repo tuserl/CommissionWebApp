@@ -1,5 +1,5 @@
 const { test, expect } = require("playwright-visible-mouse")({
-  url: "http://localhost:8080/CommissionWebApp/index.jsp",
+  url: "http://localhost:9999/CommissionWebApp/index.jsp",
   interactionMode: "HUMAN",
   notify: true,
   reuseBrowser: true,
