@@ -46,7 +46,7 @@ public class CommissionService {
             return itemPrice * 0.10;
         }
 
-        if (employeeType == EmployeeType.NON_SALARIED && itemType == ItemType.OTHER) {
+        if (employeeType == EmployeeType.NON_SALARIED) {
             if (itemPrice > 10000) {
                 return itemPrice * 0.05;
             }
